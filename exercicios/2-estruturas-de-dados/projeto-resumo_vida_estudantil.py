@@ -14,9 +14,9 @@ cursos = input('Cursos realizados: ')
 estudante['cursos'] = cursos.split(', ')
 
 anos_transcorridos = estudante['ano_atual'] - estudante['ano_linkedin']
-total_cursos = len.estudante['cursos']
+total_cursos = len(estudante['cursos'])
 
-print(f"{estudante['nome']}, desde {estudante['ano_linkedin']},
-       há {anos_transcorridos} anos, você concluiu {total_cursos}, 
-       sendo o primeiro {estudante['cursos'][0]}, 
-       e o último {estudante['cursos'][-1]}.")
+print(f"{estudante['nome']}, desde {estudante['ano_linkedin']}, \
+há {anos_transcorridos} anos, você concluiu {total_cursos} cursos, \
+sendo o primeiro {estudante['cursos'][0]}, \
+e o último {estudante['cursos'][-1]}.")
