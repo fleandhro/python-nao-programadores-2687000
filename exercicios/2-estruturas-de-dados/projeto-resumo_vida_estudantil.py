@@ -4,9 +4,19 @@
 # 2. Armazene esses dados em um dicionário
 # 3. Imprima na tela uma string com as informações de nome, ano_conheceu_linkedin, total de anos transcurridos, total de cursos realizados e (apenas) o primeiro e último curso.
 
-nome = str(input('Nome: '))
-ano_linkedin = int(input('Ano que conheceu o LinkedIn: '))
-ano_atual = int(input('Ano atual: '))
-cursos_realizados = str(input('Últimos 3 cursos concluídos: '))
+estudante = {}
 
-print(f'{nome}, você entrou no LinkedIn em {ano_linkedin}, há {ano_atual - ano_linkedin} anos atrás, e já concluiu x cursos, sendo o primeiro x e o último y')
+estudante['nome'] = input('Aluno: ')
+estudante['ano_linkedin'] = int(input('Ano inscrição no LinkedIn: '))
+estudante['ano_atual'] = int(input('Ano atual: '))
+cursos = input('Cursos realizados: ')
+
+estudante['cursos'] = cursos.split(', ')
+
+anos_transcorridos = estudante['ano_atual'] - estudante['ano_linkedin']
+total_cursos = len.estudante['cursos']
+
+print(f"{estudante['nome']}, desde {estudante['ano_linkedin']},
+       há {anos_transcorridos} anos, você concluiu {total_cursos}, 
+       sendo o primeiro {estudante['cursos'][0]}, 
+       e o último {estudante['cursos'][-1]}.")
