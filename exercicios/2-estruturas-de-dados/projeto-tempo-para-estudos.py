@@ -11,4 +11,5 @@ total_horas = int(input('Horas de estudo por dia: '))
 curso = str(input('Seu curso: '))
 horas_semanais = total_horas * total_dias
 
-print(f'{nome}, você dedicou {horas_semanais} horas semanais ao seu curso de {curso}.')
+print(f'{nome}, você dedicou {horas_semanais} horas semanais \
+ao seu curso de {curso}.')
