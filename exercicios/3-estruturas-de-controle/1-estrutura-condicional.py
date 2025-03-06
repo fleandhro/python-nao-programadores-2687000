@@ -20,6 +20,4 @@ else:
 
 # Insira outras condições na estrutura condicional usando o elif
 # Incremente a estrutura condicional já existente com expressões lógicas utilizando "and" ou "or"
-
-
 # Crie uma estrutura condicional onde mais de uma condição seja verdadeira, e use apenas a palavra reservada "if"
